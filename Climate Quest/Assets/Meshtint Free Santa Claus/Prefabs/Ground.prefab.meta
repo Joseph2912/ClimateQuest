@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 363118c0677f0c344ab5031e43e5afa7
+timeCreated: 1542355180
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 106193
+  packageName: Meshtint Free Santa Claus
+  packageVersion: 1.1
+  assetPath: Assets/Meshtint Free Santa Claus/Prefabs/Ground.prefab
+  uploadId: 278813
