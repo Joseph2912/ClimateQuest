@@ -16,7 +16,7 @@ public class cambioscena : MonoBehaviour
     public void IrAJuego()
     {
         // Cargar la escena del tutorial por su nombre
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("nivel1");
     }
 }
 
