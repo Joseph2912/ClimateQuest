@@ -1301,6 +1301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasLegal: {fileID: 1090647862}
+  canvasDos: {fileID: 0}
 --- !u!1 &1088670571
 GameObject:
   m_ObjectHideFlags: 0
@@ -1490,7 +1491,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -1676,7 +1677,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 24.875662}
+  m_AnchoredPosition: {x: 0, y: 33.68438}
   m_SizeDelta: {x: 0, y: 1130.8342}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &1243959998
@@ -1770,6 +1771,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasLegal: {fileID: 1090647862}
+  canvasDos: {fileID: 0}
 --- !u!1 &1406662975
 GameObject:
   m_ObjectHideFlags: 0
@@ -1852,8 +1854,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1410444442}
   m_HandleRect: {fileID: 1410444441}
   m_Direction: 2
-  m_Value: 0.9702128
-  m_Size: 0.26150584
+  m_Value: 0.959665
+  m_Size: 0.26150587
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1928,8 +1930,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 469487857}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.71649647}
-  m_AnchorMax: {x: 1, y: 0.9780023}
+  m_AnchorMin: {x: 0, y: 0.708707}
+  m_AnchorMax: {x: 1, y: 0.9702128}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2814,7 +2816,7 @@ GameObject:
   - component: {fileID: 1928290932}
   - component: {fileID: 1928290933}
   m_Layer: 5
-  m_Name: GameObject
+  m_Name: Titulo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

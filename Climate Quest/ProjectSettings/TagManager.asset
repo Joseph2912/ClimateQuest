@@ -10,6 +10,7 @@ TagManager:
   - Espada
   - Basura
   - Panel
+  - Enemy
   layers:
   - Default
   - TransparentFX

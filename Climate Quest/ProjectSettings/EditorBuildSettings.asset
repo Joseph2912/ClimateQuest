@@ -17,5 +17,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/nivel2.unity
     guid: 865a2a12abb58944f9af11887adeab21
+  - enabled: 1
+    path: Assets/Scenes/fin.unity
+    guid: e8f24406c60148a4ea1e50af813f0942
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

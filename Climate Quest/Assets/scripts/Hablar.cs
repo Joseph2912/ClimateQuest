@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class Hablar : MonoBehaviour
 {
-    public GameObject canvasLegal;
+    public GameObject canvasDialogo;
+    public GameObject canvasBarraEspaciadora;
 
     void Update()
     {
@@ -10,13 +11,14 @@ public class Hablar : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             // Mostrar el canvas legal
-            canvasLegal.SetActive(true);
+            canvasDialogo.SetActive(true);
+            canvasBarraEspaciadora.SetActive(false);
         }
     }
 
     // Método para desactivar el canvas legal
     public void OcultarCanvasLegal()
     {
-        canvasLegal.SetActive(false);
+        canvasDialogo.SetActive(false);
     }
 }

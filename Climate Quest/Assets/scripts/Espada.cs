@@ -10,10 +10,10 @@ public class Espada : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        if (other.CompareTag("Gallina"))
+        if (other.CompareTag("Enemy"))
         {
             //golpes++;
-            other.GetComponent<Chicken>().RecibirGolpe();
+            other.GetComponent<Enemies>().RecibirGolpe();
 
         }
     }

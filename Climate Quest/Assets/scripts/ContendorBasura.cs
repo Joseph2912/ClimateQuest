@@ -16,6 +16,16 @@ public class ContenedorBasura : MonoBehaviour
         portal.SetActive(false);
     }
 
+    void Update()
+    {
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+
+        if (basuraRecogida == 3 && enemies.Length == 0)
+        {
+            portal.SetActive(true);
+        }
+    }
+
     // Método para recoger la basura
     public void RecogerBasura(Basura basura)
     {
@@ -24,16 +34,10 @@ public class ContenedorBasura : MonoBehaviour
             basuraRecogida++;
             contadorBasura.text = "Basura recogida: " + basuraRecogida.ToString(); // Actualiza el texto del contador
             basura.Recoger(); // Llama al método Recoger de la basura correspondiente
-            if (basuraRecogida == 3)
-            {
-                portal.SetActive(true);
-            }
-            
         }
         else
         {
             Debug.Log("¡Ya has recogido todas las basuras!");
-          
         }
     }
 }

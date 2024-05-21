@@ -13,6 +13,8 @@ public class Chicken : MonoBehaviour
     public int damagePerHit = 1; // Daño por cada golpe de la gallina
 
     private santa jugador; // Referencia al jugador
+    private Animator animator; // Referencia al componente Animator
+    public AnimationClip dieClip;
 
     public void RecibirGolpe()
     {
@@ -21,7 +23,8 @@ public class Chicken : MonoBehaviour
         if (golpesRecibidos >= 2) // Verificar si el enemigo ha recibido 2 golpes
         {
             Debug.Log("Enemigo eliminado tras recibir 2 golpes.");
-            Destroy(this.gameObject); // Destruir al enemigo al recibir 2 golpes
+            animator.SetTrigger("Die");
+            Destroy(this.gameObject, dieClip.length); // Destruir al enemigo al recibir 2 golpes
         }
     }
 
@@ -30,6 +33,7 @@ public class Chicken : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform; // Buscar al jugador por su etiqueta
         GenerateRandomDirection();
         jugador = GameObject.FindGameObjectWithTag("Player").GetComponent<santa>(); // Obtener el componente santa del jugador
+        animator = GetComponent<Animator>(); // Obtener el componente Animator
     }
 
     void Update()
@@ -74,6 +78,7 @@ public class Chicken : MonoBehaviour
         if (collision.gameObject.CompareTag("Player")) // Verificar si la gallina golpea al jugador
         {
             jugador.TakeDamage(damagePerHit); // Llamar al método TakeDamage del jugador para causarle daño
+            animator.SetTrigger("Attack"); // Cambiar a la animación de ataque
         }
     }
 }
